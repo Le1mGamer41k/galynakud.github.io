@@ -1,0 +1,234 @@
+/* Основні стилі */
+body {
+    font-family: "Trebuchet MS", sans-serif;
+    text-align: center;
+    background: #eaeaea;
+    margin: 0;
+    padding: 0;
+}
+
+
+     /* хедер */
+header {
+    background: linear-gradient(135deg, #00796b, #004d40);
+    color: white;
+    padding: 0.5rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-bottom: 3px solid #00bfa5;
+    }
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+    
+    nav ul li {
+        display: inline;
+    }
+    
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.1rem;
+        padding: 10px 15px;
+        border-radius: 8px;
+        transition: background 0.3s ease;
+    }
+
+    nav ul li a:hover {
+        background: rgba(255, 255, 255, 0.2);
+    }
+
+
+    .city-grid {
+        display: grid;
+        grid-template-columns: repeat(5, 100px);
+        gap: 8px;
+        margin: 20px auto;
+        padding: 15px;
+        background: #e0e0e0;
+        width: fit-content;
+        border-radius: 12px;
+        box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .city-style {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(135deg, #4cc5b7, #004d40);
+        color: rgb(29, 27, 27);
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        margin: 20px auto;
+        max-width: 700px;
+        text-align: left;
+    }
+    
+
+.city-grid div {
+    width: 90px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+    border-radius: 10px;
+}
+
+.building {
+    background: #c48e73;
+    border: 3px solid #a5284f;
+}
+
+.factory {
+    background: #4e4c4c;
+    border: 3px solid #9d828a;
+}
+
+.road {
+    background: #b2b1b1;
+    border: 2px dashed #4e4e4e;
+}
+
+.park {
+    background: #7dcc7d;
+    border: 2px solid #468d46;
+}
+
+
+.info-section {
+    display: flex;
+    align-items: center;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 700px;
+    text-align: left;
+}
+
+.alt-style {
+    background: linear-gradient(135deg, #00796b, #004d40);
+    color: white;
+}
+
+.town {
+    font-size: 3rem;
+    margin-right: 20px; 
+}
+.icon {
+    font-size: 3rem;
+    margin-right: 20px;
+}
+
+.text-content h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.text-content p {
+    font-size: 1.1rem;
+    
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 12px 20px;
+    background: white;
+    color: #00796b;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+    background: #00bfa5;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .city-grid {
+        grid-template-columns: repeat(3, 90px);
+    }
+
+    .info-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .icon {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .city-grid {
+        grid-template-columns: repeat(2, 90px);
+    }
+
+    .text-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .text-content p {
+        font-size: 1rem;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+footer {
+    background: linear-gradient(135deg, #004d40, #00251a);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 1rem;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+    border-top: 3px solid #00bfa5;
+}
+
+    .contact-info p {
+        margin: 5px 0;
+    }
+
+    .contact-info a {
+        color: #80deea;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease;
+    }
+
+    .contact-info a:hover {
+        color: #00bfa5;
+        text-decoration: underline;
+    }
